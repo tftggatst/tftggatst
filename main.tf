@@ -13,6 +13,7 @@ resource "google_compute_instance" "default" {
 
   labels = {
     environment                = "test"
+    month = "december"
   }
 
   network_interface {
