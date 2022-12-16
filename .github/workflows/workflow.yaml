@@ -19,11 +19,11 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     # Install the latest version of Terragrunt CLI and configure the Terragrunt CLI configuration file with a Terragrunt Cloud user API token
     - name: Setup Terraform v1.2.6
-      uses: hashicorp/setup-Terraform@v1
+      uses: hashicorp/setup-Terraform@v2
       with:
         terraform_version: 1.2.6
         terraform_wrapper: false
